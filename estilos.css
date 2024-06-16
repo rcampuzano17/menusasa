@@ -1,0 +1,93 @@
+@keyframes mari0{
+	from{
+		background-size:1400px 900px;
+		background-position:center center;
+	}
+}
+	to{
+		background-size:100% 100%;
+}
+
+@keyframes mariotext0{
+	from{
+		opacity:0;
+		font-size:0px;
+	}
+}
+	to{
+		opacity:1;
+		font-size:80px;
+}
+
+body{
+	background:#222;
+	margin:0 auto;
+}
+header{
+	background:url("camarones.jpg") center center;
+	background-size:100% 100%;
+	height:250px;
+	animation:mari0  5s forwards;
+	overflow: hidden;
+}
+nav {
+	background: linear-gradient(to bottom right, 
+		rgba(255,183,107,1) 0%, 
+		rgba(255,127,0,1) 12%, 
+		rgba(255,183,107,1) 15%, 
+		rgba(255,124,0,1) 48%, 
+		rgba(255,167,61,1) 50%, 
+		rgba(255,127,0,1) 78%, 
+		rgba(234,153,39,1) 80%, 
+		rgba(255,127,4,1) 100%);
+	width: 30%;
+}
+h1{
+	text-shadow:0 0 20px orange;
+	color:#000;
+	font-size:50px;
+	text-align:center;
+	animation:mariotext0 5s forwards;
+}
+h2{
+	color:#FFF;
+}
+nav,#contenido{
+
+	display:inline-block;
+	vertical-align:top;
+}
+#todo{
+	background:#000;
+	box-shadow:inset 0 0 10px #000;
+	max-width:1800px;
+	width:80%;
+	margin:0 auto;
+}
+#todo #contenido{
+	box-shadow:inset 0 0 15px #FFF;
+	min-height:400px;
+	margin-left: 40px;
+	width:60%;
+}
+#todo #menu{
+	list-style:none;
+	font-family:verdana;
+	font-size:10px;
+	text-transform:uppercase;
+}
+#todo #menu li{
+	background:rgb(0,0,0,0.7);
+	border-radius:0.3em 0 0 0.1em;
+	border-bottom: 1px #FFF solid;
+	padding:1em;
+	text-align:center;
+	transition:linear all 1s;
+}
+#todo #menu li:hover{
+	background:orange;
+}
+#enlace{	
+	color:#fff;	
+	text-decoration:none;	
+}
